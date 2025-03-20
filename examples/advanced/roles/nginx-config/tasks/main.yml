@@ -5,5 +5,5 @@
 - name: install html configuration
   template:
     src: "html.j2"
-    dest: '/etc/nginx/{% if ansible_os_family == "Debian" %}sites-available{% elif ansible_os_family == "RedHat" %}conf.d{% endif %}/{{region|lower}}-site.conf'
+    dest: '/var/www/html/{{region|lower}}-site.html'
   notify: restart-nginx  
