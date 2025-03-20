@@ -1,6 +1,3 @@
-# init 
-    vagrant init
-    
 ## add boxes
     vagrant box add ssplatt/rocky9
     vagrant box add maxhamon/debian12
