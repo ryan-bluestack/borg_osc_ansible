@@ -1,0 +1,7 @@
+---
+- name: play
+  hosts: localhost
+  tasks:
+    - name: echo
+      debug:
+        msg: debugging

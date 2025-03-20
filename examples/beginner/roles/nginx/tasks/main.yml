@@ -1,0 +1,18 @@
+# tasks file for roles/nginx
+---
+- name: install nginx
+  package: 
+    name: nginx
+    state: latest
+
+- name: start & enable nginx
+  systemd:
+    name: nginx
+    enabled: true
+    state: started 
+    
+- name: copy configuration
+  copy:
+    src: files/site.conf
+    dest: '/etc/nginx/{% if ansible_os_family == "Debian" %}sites-available{% elif ansible_os_family == "RedHat" %}conf.d{% endif %}/default-site.conf'
+  notify: restart-nginx
