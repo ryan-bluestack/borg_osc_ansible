@@ -17,11 +17,10 @@ this inventory can be used by ansible-playbook:
 # lab
 configure two web servers located in different regions. 
 
-|-----------------------------------|
-| server |      web1    |    web2   |
-|-----------------------------------|
-| region |      AM3     |    FS1    |
-| country|      NL      |    DE     | 
+|server   |web1   |web2   |
+|---|---|---|
+|region   |AM3   |FS1   |
+|country   |NL   |DE   |
 
 ## beginner
 Create a role that installs the webserver of your choice on both machines.
