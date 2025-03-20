@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	{% if region|upper == "DE"%}<title>Beispiel</title>{% endif %}
+	{% if region|upper == "NL"%}<title>Voorbeeld</title>{% endif %}
+    </head>
+    <body>
+        {% if region|upper == "DE"%}<p>Dies ist ein Beispiel für eine einfache HTML-Seite mit einem Absatz.</p>{% endif %}
+        {% if region|upper == "NL"%}<p>Dit is een voorbeeld html pagina, met een paragraaf.</p>{% endif %}
+    </body>
+</html>
+

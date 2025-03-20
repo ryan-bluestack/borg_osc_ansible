@@ -1,0 +1,17 @@
+- name: "install nginx & configure nginx: NL"
+  hosts: web1 
+  become: true 
+  vars:
+    region: nl 
+  roles: 
+    - roles/nginx
+    - roles/nginx-config
+
+- name: "install nginx & configure nginx: DE" 
+  hosts: web2 
+  become: true 
+  vars:
+    region: de
+  roles: 
+    - roles/nginx
+    - roles/nginx-config

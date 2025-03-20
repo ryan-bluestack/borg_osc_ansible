@@ -1,5 +1,6 @@
 # init 
     vagrant init
+    
 ## add boxes
     vagrant box add ssplatt/rocky9
     vagrant box add maxhamon/debian12
@@ -16,6 +17,7 @@ this inventory can be used by ansible-playbook:
 # lab
 configure two web servers located in different regions. 
 
+|-----------------------------------|
 | server |      web1    |    web2   |
 |-----------------------------------|
 | region |      AM3     |    FS1    |
@@ -27,6 +29,6 @@ Create a role that installs the webserver of your choice on both machines.
 hint: ansible-galaxy role init 
 
 ## advanced
-Change the created role to include different web pages (Dutch or German) depending on what region the host is located in, see /etc/region.txt on the vagrant host or the vagrant file for more information.
+Change the created role (or create a new one) to include different web pages (Dutch or German) depending on what region the host is located in.  
 
 hint: try using jinja templating

@@ -1,0 +1,9 @@
+#SPDX-License-Identifier: MIT-0
+---
+# tasks file for roles/nginx-config
+
+- name: install html configuration
+  template:
+    src: "html.j2"
+    dest: '/etc/nginx/{% if ansible_os_family == "Debian" %}sites-available{% elif ansible_os_family == "RedHat" %}conf.d{% endif %}/{{region|lower}}-site.conf'
+  notify: restart-nginx  

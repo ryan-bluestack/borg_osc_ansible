@@ -20,7 +20,7 @@ Vagrant.configure("2") do |config|
       ansible.playbook = "playbook.yml"
     end
 
-    web1.vm.provision "file", source: "./regions/web1.txt", destination: "/etc/region.txt"
+    #web1.vm.provision "file", source: "./regions/web1.txt", destination: "/etc/region.txt"
   end
 
   config.vm.define "web2" do |web2|
@@ -31,7 +31,7 @@ Vagrant.configure("2") do |config|
       ansible.playbook = "playbook.yml"
     end
 
-    web2.vm.provision "file", source: "./regions/web2.txt", destination: "/etc/region.txt"
+    #web2.vm.provision "file", source: "./regions/web2.txt", destination: "/etc/region.txt"
   end
 
 
