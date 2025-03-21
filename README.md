@@ -20,7 +20,7 @@ this inventory can be used by ansible-playbook:
 
     ansible-playbook -i .vagrant/provisioners/ansible/inventory/vagrant_ansible_inventory playbook.yml 
 
-These paths can be relative, so -i ../../.vagrant/provisioners/ansible/inventory/vagrant_ansible_inventory would also work, if for example, you wanted to create a 
+These paths can be relative, so -i ../../.vagrant/provisioners/ansible/inventory/vagrant_ansible_inventory would also work, if for example, you wanted to create a directory of playbooks. 
 # lab
 configure two web servers located in different regions. 
 
