@@ -6,12 +6,14 @@
 - cloned this repository.
 
 ## add boxes
+these commands will download the boxes. running the vagrant up command will do the same so these are not nessesary. 
     vagrant box add rockylinux/9 #(! this one is with arm64 support @macbook users!) 
     vagrant box add maxhamon/debian12
     vagrant box list
 ## vagrant up
     vagrant up --provider virtualbox
 
+this command will bring up the VMs in virtualbox. 
 ### inventory
 will be located at '.vagrant/provisioners/ansible/inventory/vagrant_ansible_inventory' after succesfully provisioning.  
 this inventory can be used by ansible-playbook:
