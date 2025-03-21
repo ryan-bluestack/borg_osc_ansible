@@ -1,13 +1,12 @@
 # prerequisites
 
-installed vagrant
-installed virtualbox
-installed git
-
-cloned this repository.
+- installed vagrant
+- installed virtualbox
+- installed git
+- cloned this repository.
 
 ## add boxes
-    vagrant box add rockylinux/9 (! this one is with arm64 support @macbook users!) 
+    vagrant box add rockylinux/9 #(! this one is with arm64 support @macbook users!) 
     vagrant box add maxhamon/debian12
     vagrant box list
 ## vagrant up
@@ -45,12 +44,11 @@ the examples/ folder contains some (really quickly made, not complete) examples 
 
 ### possibly related documentation
 
-https://docs.ansible.com/ansible/latest/collections/ansible/builtin/package_module.html
-https://docs.ansible.com/ansible/latest/collections/ansible/builtin/copy_module.html
-https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_module.html
-https://docs.ansible.com/ansible/latest/collections/ansible/builtin/dnf_module.html
-https://docs.ansible.com/ansible/latest/collections/ansible/builtin/lineinfile_module.html
-https://docs.ansible.com/ansible/latest/collections/ansible/builtin/blockinfile_module.html
-https://docs.ansible.com/ansible/latest/collections/ansible/builtin/stat_module.html
-https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_templating.html
-
+ - https://docs.ansible.com/ansible/latest/collections/ansible/builtin/package_module.html
+ - https://docs.ansible.com/ansible/latest/collections/ansible/builtin/copy_module.html
+ - https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_module.html
+ - https://docs.ansible.com/ansible/latest/collections/ansible/builtin/dnf_module.html
+ - https://docs.ansible.com/ansible/latest/collections/ansible/builtin/lineinfile_module.html
+ - https://docs.ansible.com/ansible/latest/collections/ansible/builtin/blockinfile_module.html
+ - https://docs.ansible.com/ansible/latest/collections/ansible/builtin/stat_module.html
+ - https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_templating.html
