@@ -13,14 +13,12 @@ Vagrant.configure("2") do |config|
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://vagrantcloud.com/search.
   config.vm.define "web1" do |web1|
-    web1.vm.box = "ssplatt/rocky9"
+    web1.vm.box = "rockylinux/9"
 
     web1.vm.provision "ansible" do |ansible|
       ansible.verbose = "v"
-      ansible.playbook = "playbook.yml"
+      ansible.playbook = "playbook_for_provisioning_your_inventory_DONOTUSE.yml"
     end
-
-    #web1.vm.provision "file", source: "./regions/web1.txt", destination: "/etc/region.txt"
   end
 
   config.vm.define "web2" do |web2|
@@ -28,10 +26,8 @@ Vagrant.configure("2") do |config|
 
     web2.vm.provision "ansible" do |ansible|
       ansible.verbose = "v"
-      ansible.playbook = "playbook.yml"
+      ansible.playbook = "playbook_for_provisioning_your_inventory_DONOTUSE.yml"
     end
-
-    #web2.vm.provision "file", source: "./regions/web2.txt", destination: "/etc/region.txt"
   end
 
 
